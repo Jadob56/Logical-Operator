@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckNumber</title>
+</head>
+<body>
+  <h1>Check Holiday</h1>
+  <input type="text" id="Dy" placeholder="Enter Day">
+  <button onclick="checkday()">Check</button>
+  <p id="printOutput"></p>
+  <script>
+    function checkday(){
+    let day = document.getElementById("Dy").value.toLowerCase();
+
+    if(day ==="friday" || day ==="saturday"){
+
+      document.getElementById("printOutput").innerText = "Holiday";
+
+    } else{
+
+      document.getElementById("printOutput").innerText = "Working Day"
+    }
+  }  
+  </script>
+                          
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result check using and Operator</title>
+</head>
+<body>
+  <h1>Check the result</h1>
+  <input type="number" id="marks" placeholder="Enter number">
+  <button onclick="checkResult()">Check</button>
+  <p id="printoutPut"></p>
+  <script>
+    function checkResult(){
+      let marks = Number(document.getElementById("marks").value);
+      if(marks>=40 && marks <=100){
+        document.getElementById("printoutPut").innerText = "Pass";
+      }else if (marks>=0 && marks<40){
+        document.getElementById("printoutPut").innerText = "Fail";
+      }else{
+        document.getElementById("printoutPut").innerText = "Invalid Number";
+      }
+    }
+  </script>
+</body>
+</html>

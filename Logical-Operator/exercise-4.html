@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Status check</title>
+</head>
+<body>
+  <h1>Log In Status Check</h1>
+  <button onclick="checkLogin()">Check</button>
+  <p id="printOutput"></p>
+  <script>
+    let isLoggedIn = true;
+    
+    function checkLogin() {
+
+    if (!isLoggedIn) {
+     document.getElementById("printOutput").innerText = ("Please login");
+    } else {
+      document.getElementById("printOutput").innerText = ("Login");
+    }
+  }
+  </script>
+</body>
+</html>

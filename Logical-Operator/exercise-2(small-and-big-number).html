@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive-and-small-number</title>
+</head>
+<body>
+  <h1>Positive and small number</h1>
+  <input type="number" id="Num" placeholder="Enter number">
+  <button onclick="checkNumber()">CheckNumber</button>
+  <p id="printOutput"></p>
+  
+  <script>
+    function checkNumber(){
+      let num = Number(document.getElementById("Num").value);
+      if(num>0 && num<100){
+
+        document.getElementById("printOutput").innerText = "Valid Number";
+
+      }else{
+
+        document.getElementById("printOutput").innerText = "Invalid Number";
+
+      }
+    }
+  </script>
+</body>
+</html>
